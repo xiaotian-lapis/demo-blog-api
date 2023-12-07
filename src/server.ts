@@ -5,6 +5,8 @@ import {simulateDatabaseIO} from "./utils/dbIOSimulation.util";
 const app = express();
 const port = 3000;
 
+const cors = require('cors')
+
 // Example data
 export const BLOG_DATA : Blog[] = [
     {
@@ -26,6 +28,8 @@ export const BLOG_DATA : Blog[] = [
         updatedTime: new Date(),
     },
 ];
+
+app.use(cors())
 
 app.get('/', (req, res) => {
     res.json(
