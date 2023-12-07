@@ -14,7 +14,7 @@ export const BLOG_DATA : Blog[] = [
         title: 'First Blog',
         content: 'This is my first blog',
         description: 'This is my first blog',
-        author: 'Anonymous',
+        author: 'John Wick',
         createdTime: new Date(),
         updatedTime: new Date(),
     },
@@ -23,10 +23,19 @@ export const BLOG_DATA : Blog[] = [
         title: 'Second Blog',
         content: 'This is my second blog',
         description: 'This is my second blog',
-        author: 'Anonymous',
+        author: 'John Doe',
         createdTime: new Date(),
         updatedTime: new Date(),
     },
+    {
+        id: '3',
+        title: 'Third Blog',
+        content: 'This is my third blog',
+        description: 'This is my third blog',
+        author: 'Harry Potter',
+        createdTime: new Date(),
+        updatedTime: new Date(),
+    }
 ];
 
 app.use(cors())
