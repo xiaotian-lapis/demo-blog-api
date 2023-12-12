@@ -17,6 +17,11 @@ export const BLOG_DATA : Blog[] = [
         author: 'John Wick',
         createdTime: new Date(),
         updatedTime: new Date(),
+        location: {
+            lat: -37.80984736554404,
+            lng: 144.96339022413397,
+            addr: '211 La Trobe St, Melbourne VIC 3000'
+        },
     },
     {
         id: '2',
@@ -26,6 +31,11 @@ export const BLOG_DATA : Blog[] = [
         author: 'John Doe',
         createdTime: new Date(),
         updatedTime: new Date(),
+        location: {
+            lat: -37.8115090940683,
+            lng: 144.96377748262293,
+            addr: '300 Lonsdale St, Melbourne VIC 3000'
+        },
     },
     {
         id: '3',
@@ -35,6 +45,11 @@ export const BLOG_DATA : Blog[] = [
         author: 'Harry Potter',
         createdTime: new Date(),
         updatedTime: new Date(),
+        location: {
+            lat: -37.799872325077274,
+            lng: 144.96440840984917,
+            addr: '700 Swanston St, Carlton VIC 3053'
+        },
     }
 ];
 
