@@ -4,7 +4,7 @@
  */
 export const simulateDatabaseIO = <T>(data: T): Promise<T> => {
 
-    const isGodMode = false; // if true, always success
+    const isGodMode = true; // if true, always success
     const isEvilMode = false; // if true, always error, and evil mode has higher priority than god mode
 
     const delay = Math.floor(Math.random() * 5000); // Random delay up to 5 seconds
