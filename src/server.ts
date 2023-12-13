@@ -3,12 +3,10 @@ import {Blog} from "./models/blog.model";
 import {simulateDatabaseIO} from "./utils/dbIOSimulation.util";
 import {BLOG_DATA} from "./mock.data";
 
+import cors from "cors";
+
 const app = express();
 const port = 3000;
-
-const cors = require('cors')
-
-
 app.use(cors())
 
 app.get('/', (req, res) => {
