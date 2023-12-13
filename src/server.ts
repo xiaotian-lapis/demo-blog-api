@@ -33,6 +33,20 @@ app.get('/api/blogs', async (req, res) => {
     }
 });
 
+app.post('/api/geojson/parse-file', async (req, res) => {
+    try {
+        const data = req.body;
+        res.json(data);
+    } catch (error) {
+        if (error instanceof Error) {
+            res.status(500).send(error.message);
+        } else {
+            res.status(500).send("unknown error");
+        }
+
+    }
+});
+
 app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
